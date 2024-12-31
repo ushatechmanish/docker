@@ -1,0 +1,72 @@
+1999  docker run mongo
+ 2000  docker run -it mongo bash
+ 2001  docker run ubuntu
+ 2002  docker ps
+ 2003  docker run -it ubuntu
+ 2004  docker container prune -f
+ 2005  clear
+ 2006  docker run -d alpine ping google.com
+ 2007  docker ps
+ 2008  docker log 52364a6e68fe
+ 2009  history | grep log
+ 2010  clear
+ 2011  docker ps
+ 2012  docker logs 52364a6e68fe
+ 2013  docker logs --since 5s
+ 2014  docker logs --since 5
+ 2015  docker logs --since 5s 52364a6e68fe
+ 2016  docker stop 52364a6e68fe
+ 2017  docker rm 52364a6e68fe
+ 2018  docker images
+ 2019  docker rm * -f
+ 2020  docker images ls
+ 2021  docker images
+ 2022  docker images rm * -f
+ 2023  docker images rm *
+ 2024  docker images
+ 2025  docker run -d nginx
+ 2026  docker run -d -p 8080:80 nginx
+ 2027  docker container ls
+ 2028  docker container stop 18f5f9b53a38
+ 2029  docker container stop 2fb4e2250a5c
+ 2030  docker ps -q
+ 2031  docker ps -q -a
+ 2032  docker stop $(docker ps -a -a)
+ 2033  docker stop $(docker ps -a -1)
+ 2034  docker stop $(docker ps -a -q)
+ 2035  docker images prune
+ 2036  docker image prune
+ 2037  docker images
+ 2038  docker rmi $(docker images -q)
+ 2039  docker images
+ 2040  docker ps
+ 2041  docker rmi $(docker images -q) -f
+ 2042  clear
+ 2043  docker run -it ubuntu
+ 2044  docker ps
+ 2045  docker container
+ 2046  docker container ls
+ 2047  docker ps
+ 2048  docker ps -a
+ 2049  docker commit -m "Added names.txt to ubuntu image and added Manish Chauhan to it " 2fb4e2250a5c manish_ubuntu:1.1
+ 2050  docker commit -m "Added names.txt to ubuntu image and added Manish Chauhan to it " 3c339774aaf7  manish_ubuntu:1.1
+ 2051  docker images -q --no-trunc
+ 2052  docker container ls
+ 2053  docker ps
+ 2054  touch Dockerfile
+ 2055  vi Dockerfile
+ 2056  cat Dockerfile
+ 2057  docker build -t myImage:1.1 .
+ 2058  docker build -t myimage:1.1 .
+ 2059  docker login
+ 2060  ls
+ 2061  mv Dockerfile devops/docker/
+ 2062  cd devops/
+ 2063  cd docker/
+ 2064  ls
+ 2065  docker build -t myimage:1.1 .
+ 2066  docker images
+ 2067  docker run myimage:1.1
+ 2068  docker rmi images manish_ubuntu:1.1
+ 2069  docker images
+ 2070  history
